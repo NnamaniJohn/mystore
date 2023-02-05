@@ -1,1 +1,9 @@
-<p>product-item works!</p>
+<div class="item">
+  <a [routerLink]="['/product-item', product.id]"><img class="item-img" src="{{ product.url }}" width="240px"></a>
+  <div class="item-detail">
+    <h2 class="item-title">{{ product.name }}</h2>
+    <h3 class="item-price">${{ product.price }}</h3>
+    <div *ngIf="btnShow"><input class="item-input" type="number" min="1" placeholder="quantity" [(ngModel)]="product.quantity"></div>
+    <button type="button" class="add-btn" (click)="addToCart()">Add to Cart</button>
+  </div>
+</div>

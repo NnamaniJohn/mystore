@@ -1,10 +1,10 @@
-.product-image {      
+.product-image {
   list-style-type: none;
   width: 290px;
   padding: 20px;
-  margin: 6px 6px;        
+  margin: 6px 6px;
   border: 1px solid #33B5E5;
-} 
+}
 
 .product-container {
   margin-top: 64px;
@@ -16,6 +16,39 @@
 }
 
 .select-input {
-  width: 108px; 
+  width: 108px;
   margin-bottom: 8px;
+}
+
+.item {
+  text-align: center;
+  margin: 24px 0;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.item-title {
+  color: #33B5E5;
+  font-size: 20px;
+}
+
+.item-price {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+.item-input {
+  padding: 10px 5px;
+  text-align: center;
+  width: 70px;
+}
+
+.add-btn {
+  border: 0;
+  background-color: #33B5E5;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
 }
