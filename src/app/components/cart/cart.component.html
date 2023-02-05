@@ -1,0 +1,23 @@
+<div class="cart-container">
+  <div class="cart-panel">
+    <div class="item" *ngFor="let product of cart">
+      <img class="item-img" src="{{ product.url }}" width="100px">
+      <div class="item-detail">
+        <h2 class="item-title">{{ product.name }}</h2>
+        <h3 class="item-price">${{ product.price }}</h3>
+        <div><input class="item-input" type="number" [(ngModel)]="product.quantity" (ngModelChange)="remove(product)" placeholder="quantity" name="quantity"></div>
+      </div>
+    </div>
+    <h2>Total: ${{ sum() }}</h2>
+  </div>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>First Name</label>
+    <input required minlength="3" placeholder="( minimum 3 characters )" [(ngModel)]="name" name="name">
+    <label>Address</label>
+    <input required minlength="6" placeholder="( minimum 6 characters )" [(ngModel)]="address" name="address">
+    <label>Credit card number</label>
+    <input required minLength="15" min="999999999999999" placeholder="( 16-digit number )" type="number" [(ngModel)]="card" name="card">
+    <p>we will never share your information</p>
+    <button class="form-btn" type="submit" [disabled]="form.invalid">Summit</button>
+  </form>
+</div>

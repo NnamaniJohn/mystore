@@ -6,6 +6,17 @@ MyStore is Angular application that allows users to view a list of available pro
 
 To use these files, simply merge the folders into the root directory of your scaffolded Angular application.
 
+## Installation Instructions
+This section contains all the packages used in this project and how to install them. However, you can fork this repo and run the following command at the root directory to install all packages.
+
+`yarn` or `npm install`
+
+## Start App
+`ng serve`
+
+### Running Ports
+After start up, the server will start on port `3000`
+
 ## Project Instructions
 
 #### Project introduction: MyStore

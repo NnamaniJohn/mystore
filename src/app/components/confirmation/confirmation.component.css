@@ -18,3 +18,12 @@
 .confirmation-item {
   margin-bottom: 30px;
 }
+
+.back-btn {
+  border: 0;
+  background-color: #33B5E5;
+  padding: 10px 15px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}

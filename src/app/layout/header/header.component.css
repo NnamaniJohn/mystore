@@ -5,6 +5,18 @@
   padding: 12px;
 }
 
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+  margin: 0 12px 0 12px;
+}
+
 a {
   color: #ffffff;
+  text-decoration: none;
 }
