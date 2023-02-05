@@ -15,7 +15,7 @@ This section contains all the packages used in this project and how to install t
 `ng serve`
 
 ### Running Ports
-After start up, the server will start on port `3000`
+After start up, the server will start on port `4200`
 
 ## Project Instructions
 
